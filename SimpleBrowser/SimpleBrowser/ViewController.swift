@@ -12,7 +12,11 @@ import WebKit
 class ViewController: UIViewController, WKNavigationDelegate {
     
     var webView: WKWebView!
-    
+
+    private enum ActionKeys: Selector {
+        case Open = "open"
+    }
+
     override func loadView() {
         webView = WKWebView()
         webView.navigationDelegate = self
@@ -21,7 +25,12 @@ class ViewController: UIViewController, WKNavigationDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Open", style: .Plain, target: self, action: ActionKeys.Open.rawValue)
+
+        let url = NSURL(string: "https://hackingwithswift.com")!
+        webView.loadRequest(NSURLRequest(URL: url))
+        webView.allowsBackForwardNavigationGestures = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,6 +38,8 @@ class ViewController: UIViewController, WKNavigationDelegate {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func open() {
+        
+    }
 }
 
