@@ -27,7 +27,7 @@ class MasterViewController: UITableViewController {
         
         let fileManager = NSFileManager.defaultManager()
         let path = NSBundle.mainBundle().resourcePath!
-        let contents = fileManager.contentsOfDirectoryAtPath(path, error: nil)
+        let contents = try? fileManager.contentsOfDirectoryAtPath(path)
         
         for item in contents as! [String] {
             if item.hasPrefix("nssl") {
@@ -50,7 +50,7 @@ class MasterViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
-            if let indexPath = self.tableView.indexPathForSelectedRow() {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
                 let object = objects[indexPath.row]
                 let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
                 controller.detailItem = object
@@ -71,7 +71,7 @@ class MasterViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) 
         
         let object = objects[indexPath.row]
         cell.textLabel!.text = object
