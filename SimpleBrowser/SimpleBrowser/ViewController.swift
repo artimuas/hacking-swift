@@ -39,7 +39,22 @@ class ViewController: UIViewController, WKNavigationDelegate {
     }
 
     func open() {
-        
+        let ac = UIAlertController(title: "Open page...", message: nil, preferredStyle: .ActionSheet)
+        ac.addAction(UIAlertAction(title: "apple.com", style: .Default, handler: openPage))
+        ac.addAction(UIAlertAction(title: "google.com", style: .Default, handler: openPage))
+        ac.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
+        presentViewController(ac, animated: true, completion: nil)
+    }
+    
+    func openPage(action: UIAlertAction!) {
+        let url = NSURL(string: "https://" + action.title!)!
+        webView.loadRequest(NSURLRequest(URL: url))
+    }
+    
+    //MARK: Webkit Navigation Delegate
+    
+    func webView(webView: WKWebView, didFinishNavigation navigation: WKNavigation!) {
+        title = webView.title
     }
 }
 
