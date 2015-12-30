@@ -82,7 +82,43 @@ class MasterViewController: UITableViewController {
     //MARK: - Actions
     
     func promptForAnswer() {
+        let alertController = UIAlertController(title: "Enter answer", message: nil, preferredStyle: .Alert)
+        alertController.addTextFieldWithConfigurationHandler(nil)
         
+        let submitAction = UIAlertAction(title: "Submit", style: .Default) { [unowned self, alertController](action: UIAlertAction!) -> Void in
+            let answer = alertController.textFields![0]
+            self.submitAnswer(answer.text!)
+        }
+        
+        alertController.addAction(submitAction)
+        presentViewController(alertController, animated: true, completion: nil)
+    }
+    
+    func submitAnswer(answer: String) {
+        let lowerAnswer = answer.lowercaseString
+        
+        if wordIsPossible(lowerAnswer) {
+            if wordIsOriginal(lowerAnswer) {
+                if wordIsReal(lowerAnswer) {
+                    objects.insert(lowerAnswer, atIndex: 0)
+                    
+                    let indexPath = NSIndexPath(forRow: 0, inSection: 0)
+                    tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+                }
+            }
+        }
+    }
+    
+    func wordIsPossible(word: String) -> Bool {
+        return true
+    }
+    
+    func wordIsOriginal(word: String) -> Bool {
+        return true
+    }
+    
+    func wordIsReal(word: String) -> Bool {
+        return true
     }
 
 }

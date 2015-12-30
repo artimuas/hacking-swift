@@ -12,7 +12,7 @@
 		631554281C319D710081D92D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 631554261C319D710081D92D /* Main.storyboard */; };
 		6315542A1C319D710081D92D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 631554291C319D710081D92D /* Assets.xcassets */; };
 		6315542D1C319D710081D92D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6315542B1C319D710081D92D /* LaunchScreen.storyboard */; };
-		631554371C31AA3C0081D92D /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 631554361C31AA3C0081D92D /* start.txt */; };
+		A6ABB6DB1C31D7F800051598 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6ABB6DA1C31D7F800051598 /* start.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		631554291C319D710081D92D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6315542C1C319D710081D92D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6315542E1C319D710081D92D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		631554361C31AA3C0081D92D /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = start.txt; path = "../../../HackingWithSwift-master/project5-files/Content/start.txt"; sourceTree = "<group>"; };
+		A6ABB6DA1C31D7F800051598 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 		631554351C31AA2A0081D92D /* Content */ = {
 			isa = PBXGroup;
 			children = (
-				631554361C31AA3C0081D92D /* start.txt */,
+				A6ABB6DA1C31D7F800051598 /* start.txt */,
 			);
 			name = Content;
 			sourceTree = "<group>";
@@ -135,7 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6315542D1C319D710081D92D /* LaunchScreen.storyboard in Resources */,
-				631554371C31AA3C0081D92D /* start.txt in Resources */,
+				A6ABB6DB1C31D7F800051598 /* start.txt in Resources */,
 				6315542A1C319D710081D92D /* Assets.xcassets in Resources */,
 				631554281C319D710081D92D /* Main.storyboard in Resources */,
 			);
@@ -301,6 +301,7 @@
 				631554331C319D710081D92D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
