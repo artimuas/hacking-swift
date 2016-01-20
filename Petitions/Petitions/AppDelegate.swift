@@ -20,6 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
         navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
         splitViewController.delegate = self
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        let vc = storyboard.instantiateViewControllerWithIdentifier("NavController") as! UINavigationController
+        vc.tabBarItem = UITabBarItem(tabBarSystemItem: .TopRated, tag: 1)
+        
+        let tabBarController = splitViewController.viewControllers[0] as! UITabBarController
+        tabBarController.viewControllers?.append(vc)
+        
         return true
     }
 
