@@ -205,6 +205,8 @@
 		A6E3A8741B99131D003DED88 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = agratas;
 				TargetAttributes = {
@@ -473,6 +475,7 @@
 				A6E3A89F1B99131D003DED88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6E3A8A01B99131D003DED88 /* Build configuration list for PBXNativeTarget "StormViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +484,7 @@
 				A6E3A8A21B99131D003DED88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
