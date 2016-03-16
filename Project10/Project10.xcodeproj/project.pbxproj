@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6466A8B1C990B1500F2DB48 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6466A8A1C990B1500F2DB48 /* PersonCell.swift */; };
+		A6466A8D1C9913E400F2DB48 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6466A8C1C9913E400F2DB48 /* Person.swift */; };
 		A6616A3E1C7AAF49005B8324 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6616A3D1C7AAF49005B8324 /* AppDelegate.swift */; };
 		A6616A401C7AAF49005B8324 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6616A3F1C7AAF49005B8324 /* ViewController.swift */; };
 		A6616A431C7AAF49005B8324 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6616A411C7AAF49005B8324 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A6466A8A1C990B1500F2DB48 /* PersonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		A6466A8C1C9913E400F2DB48 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		A6616A3A1C7AAF49005B8324 /* Project10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6616A3D1C7AAF49005B8324 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6616A3F1C7AAF49005B8324 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				A6616A441C7AAF49005B8324 /* Assets.xcassets */,
 				A6616A461C7AAF49005B8324 /* LaunchScreen.storyboard */,
 				A6616A491C7AAF49005B8324 /* Info.plist */,
+				A6466A8A1C990B1500F2DB48 /* PersonCell.swift */,
+				A6466A8C1C9913E400F2DB48 /* Person.swift */,
 			);
 			path = Project10;
 			sourceTree = "<group>";
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6466A8B1C990B1500F2DB48 /* PersonCell.swift in Sources */,
 				A6616A401C7AAF49005B8324 /* ViewController.swift in Sources */,
+				A6466A8D1C9913E400F2DB48 /* Person.swift in Sources */,
 				A6616A3E1C7AAF49005B8324 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +294,7 @@
 				A6616A4E1C7AAF49005B8324 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
